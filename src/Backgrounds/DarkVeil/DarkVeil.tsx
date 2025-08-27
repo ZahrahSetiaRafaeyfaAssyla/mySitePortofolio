@@ -165,5 +165,8 @@ export default function DarkVeil({
     warpAmount,
     resolutionScale,
   ]);
-  return <canvas ref={ref} className="fixed inset-0-z-10" />;
+  return <canvas
+    ref={ref}
+    className="absolute inset-0 w-full h-full"
+  />;
 }

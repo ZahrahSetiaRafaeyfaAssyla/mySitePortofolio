@@ -23,15 +23,15 @@ interface FocusRect {
 }
 
 const TrueFocus: React.FC<TrueFocusProps> = ({
-  sentence = "True Focus",
+  sentence = "Web Developer|Mobile Developer|Freelance",
   manualMode = false,
-  blurAmount = 5,
-  borderColor = "green",
-  glowColor = "rgba(0, 255, 0, 0.6)",
-  animationDuration = 0.5,
+  blurAmount = 6,
+  borderColor = "rgba(117, 25, 238, 1)",
+  glowColor = "rgba(117, 25, 238, 0.6)",
+  animationDuration = 0.7,
   pauseBetweenAnimations = 1,
 }) => {
-  const words = sentence.split(" ");
+  const words = sentence.split("|");
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [lastActiveIndex, setLastActiveIndex] = useState<number | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);

@@ -90,7 +90,7 @@ const PillNav: React.FC<PillNavProps> = ({
       <nav className="flex items-center justify-between px-4 md:px-8 py-2">
         {/* Portofolio kiri */}
         <div className="font-bold text-white uppercase tracking-wider text-[18px]">
-          Portofolio
+          Arraw
         </div>
 
         {/* Menu kanan */}
